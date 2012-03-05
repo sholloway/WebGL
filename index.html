@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WebGL 2D Experiments</title>
+	<link type="text/css" href="css/experiments.css" rel="stylesheet" />
+	<script type="text/javascript" src="./js/jquery-1.7.1.js"></script>	
+	<script type="text/javascript" src="./js/shader-utils.js"></script>
+	<script type="text/javascript" src="./js/2d-api.js"></script>
+	<script type="text/javascript" src="./js/renderer.js"></script>
+	
+	<script type="text/javascript" src="./sketches/rectangles.js"></script>	
+</head>
+<body>
+	<canvas id="canvas" width="1280" height="1200"></canvas>
+</body>
+<footer>
+	<script>
+		canvas = $('canvas')[0];
+		Renderer.init(canvas)
+		// window.onload = scene(document);
+		//possibly fetch sketch's using the same mechanism as loading shaders. For now, just use javascript script tags
+		sketch = Sketch.init();
+		window.onload = Renderer.render(sketch);
+	</script>
+</footer>
+</html>

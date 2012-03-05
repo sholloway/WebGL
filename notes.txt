@@ -1,0 +1,11 @@
+Trying to understand how to utilize the OpenGL 3+ pipeline for doing 2D graphics.
+To simplify things a bit, trying to use WebGL.
+
+Resources:
+http://www.html5rocks.com/en/tutorials/webgl/webgl_fundamentals/
+
+Design:
+Jitterbug's design will have to be more complicated to deal with layers, multithreading, geometry, colors...
+However, the 2D api should be relatively the same. It would be nice to have the same concept of a sketch that 
+can be written atomically and without knowledge of OpenGL and it's hassles. 
+

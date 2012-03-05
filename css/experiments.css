@@ -1,0 +1,14 @@
+/* Licensed under a BSD license. See ../license.html for license */
+
+html, body {
+  	background-color: #aaa;
+  	font-family: Sans-Serif;
+}
+
+canvas {
+  	background-color: #fff;
+  	border: 1px solid black;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
